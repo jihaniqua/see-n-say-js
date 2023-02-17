@@ -1,0 +1,203 @@
+/* COMP1073 Client-Side JavaScript | Assignment 1 | Jihan Duerme */
+
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* General
+--------------------------------- */
+:root {
+    --purple: #9b59b6;
+    --dark-purple:  #633974 ;
+    --blue: #3498db;
+    --dark-blue: #21618c;
+    --green: #1abc9c;
+    --dark-green: #117864;
+    --orange: #e67e22;
+    --dark-orange: #935116;
+    --pink: #f06292;
+    --dark-pink: #9e405f;
+    --red: #e74c3c;
+    --dark-red: #943126;
+    --beige: #cec0ad;
+    --dark-beige: #4e4840;
+    --black: #141414;
+    --gray: #1c1c1c;
+}
+* {
+    font-family: "Work Sans", sans-serif;
+    color: var(--beige);
+    margin: 0;
+    line-height: 1.4;
+}
+html {
+    background-color: #141414;
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+/* Text
+------------------------------------- */
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+h2 {
+    margin-bottom: 30px;
+}
+h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+h1 + p {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+}
+
+/* Build your story
+------------------------------------- */
+section:first-of-type div > div {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+section:first-of-type div div > p {
+    background-color: var(--gray);
+    border: 3px solid var(--gray);
+    color: var(--beige);
+    border-radius: 4px;
+    width: 160px;
+    padding: 10px 16px;
+    margin: 0;
+}
+/* Paragraph */
+section:first-of-type > div > p {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+/* Paragraph - Colors */
+#text1 {
+    color: var(--purple);
+}
+#text2 {
+    color: var(--blue);
+}
+#text3 {
+    color: var(--green);
+}
+#text4 {
+    color: var(--orange);
+}
+#text5 {
+    color: var(--pink);
+}
+/* Buttons */
+section:first-of-type button {
+    background-color: var(--black);
+    border-radius: 4px;
+    width: 50px;
+    padding: 10px 16px;
+    margin-right: 16px;
+}
+/* Button - Purple */
+#text1Btn {
+    border: 3px solid var(--purple);
+    color: var(--purple);
+}
+#text1Btn:hover {
+    border: 3px solid var(--dark-purple);
+    color: var(--dark-purple);
+}
+/* Button - Blue */
+#text2Btn {
+    border: 3px solid var(--blue);
+    color: var(--blue);
+}
+#text2Btn:hover {
+    border: 3px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
+/* Button - Green */
+#text3Btn {
+    border: 3px solid var(--green);
+    color: var(--green);
+}
+#text3Btn:hover {
+    border: 3px solid var(--dark-green);
+    color: var(--dark-green);
+}
+/* Button - Orange */
+#text4Btn {
+    border: 3px solid var(--orange);
+    color: var(--orange);
+}
+#text4Btn:hover {
+    border: 3px solid var(--dark-orange);
+    color: var(--dark-orange);
+}
+/* Button - Pink */
+#text5Btn {
+    border: 3px solid var(--pink);
+    color: var(--pink);
+}
+#text5Btn:hover {
+    border: 3px solid var(--dark-pink);
+    color: var(--dark-pink);
+}
+
+/* View your story
+------------------------------------- */
+section:last-of-type {
+    text-align: center;
+}
+section:last-of-type > div {
+    margin: 20px 0;
+}
+section:last-of-type p {
+    font-size: 4rem;
+    font-weight: 200;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+section:last-of-type button {
+    border-radius: 4px;
+    border: none;
+    padding: 10px 16px;
+    margin: 0 8px;
+}
+/* View Story Button */
+#viewBtn {
+    border: 3px solid var(--green);
+    background-color: var(--green);
+    color: var(--black);
+}
+#viewBtn:hover {
+    border: 3px solid var(--dark-green);
+    background-color: var(--dark-green);
+}
+/* Surprise Me Button */
+#randomBtn {
+    border: 3px solid var(--red);
+    background-color: var(--red);
+    color: var(--black);
+}
+#randomBtn:hover {
+    border: 3px solid var(--dark-red);
+    background-color: var(--dark-red);
+}
+/* Reset Button */
+#resetBtn {
+    background-color: var(--black);
+    border: 3px solid var(--beige);
+    color: var(--beige);
+}
+#resetBtn:hover {
+    border: 3px solid var(--dark-beige);
+    color: var(--dark-beige);
+}
